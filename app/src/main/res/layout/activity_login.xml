@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#7AEDEAEA"
+    tools:context=".Login">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_500sdp"
+        android:layout_margin="5dp"
+        android:alpha="0.5"
+
+        android:orientation="vertical">
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+<de.hdodenhof.circleimageview.CircleImageView
+    android:id="@+id/CircleLogo"
+    android:layout_width="@dimen/_90sdp"
+    android:layout_height="@dimen/_90sdp"
+    android:src="@drawable/brain"
+    android:layout_gravity="center_horizontal"
+    android:layout_marginTop="@dimen/_40sdp"/>
+    <TextView
+        android:id="@+id/pariksha"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Pariksha"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:gravity="center"
+        android:textSize="@dimen/_25sdp"
+        android:textColor="#000000"
+        android:textStyle="bold"
+        android:fontFamily="serif"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="The online quiz app"
+        android:textStyle="bold"
+        android:textColor="#000000"
+        android:gravity="center"/>
+    </LinearLayout>
+    <android.support.v7.widget.CardView
+        android:id="@+id/card"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardBackgroundColor="#f2ffffff"
+        app:cardCornerRadius="@dimen/_10sdp"
+        app:cardPreventCornerOverlap="false"
+        app:cardMaxElevation="@dimen/_10sdp"
+        app:cardElevation="@dimen/_5sdp"
+        android:layout_marginTop="@dimen/_220sdp"
+       android:layout_marginLeft="@dimen/_30sdp"
+        android:layout_marginRight="@dimen/_30sdp"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="@dimen/_10sdp"
+            android:orientation="vertical">
+
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/input_layout_email"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/text"
+                android:layout_marginTop="@dimen/_10sdp">
+
+                <EditText
+                    android:id="@+id/user"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/input_layout_email"
+                    android:drawableLeft="@drawable/ic_portrait_black_24dp"
+                    android:drawablePadding="@dimen/_10sdp"
+                    android:ems="8"
+                    android:hint="Roll no"
+                    android:inputType="number"
+                    android:singleLine="true"
+                    android:textColorHint="#125bd1"
+                    android:textStyle="bold" />
+
+
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/layout_password"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/input_layout_email">
+
+                <EditText
+                    android:id="@+id/pass"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/layout_password"
+                    android:layout_marginTop="20dp"
+                    android:drawableLeft="@drawable/ic_lock_black_24dp"
+                    android:drawablePadding="@dimen/_10sdp"
+                    android:hint="Password"
+                    android:textColor="#125bd1"
+                    android:inputType="textPassword"
+                    android:singleLine="true"
+                    android:textStyle="bold"
+                    android:textColorHint="#125bd1"
+                    />
+
+
+
+            </android.support.design.widget.TextInputLayout>
+
+
+
+            <Button
+                android:id="@+id/loginbutton"
+                android:layout_width="@dimen/_50sdp"
+                android:layout_height="@dimen/_50sdp"
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:background="@drawable/next" />
+
+           <LinearLayout
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:weightSum="5"
+               android:layout_marginTop="@dimen/_10sdp"
+               android:orientation="horizontal">
+
+
+               <TextView
+                   android:id="@+id/register"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:textColor="@color/registerText"
+                   android:layout_weight="2.5"
+                   android:textStyle="bold"
+                   android:layout_gravity="center"
+                   android:text="Register Here?"/>
+               <TextView
+                   android:id="@+id/forgetPassword"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:textStyle="bold"
+                   android:gravity="right"
+                   android:layout_weight="2.5"
+                   android:text="Forget Password"
+                   android:textColor="@color/registerText"/>
+           </LinearLayout>
+
+
+        </LinearLayout>
+        <!--</android.support.v7.widget.CardView>-->
+
+    </android.support.v7.widget.CardView>
+
+    </FrameLayout>
+
+
