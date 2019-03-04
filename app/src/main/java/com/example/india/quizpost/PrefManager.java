@@ -2,9 +2,11 @@ package com.example.india.quizpost;
 
 import android.content.Context;
 import android.content.SharedPreferences;
+import android.preference.PreferenceManager;
 
 public class PrefManager {
 
+    public static final String myPref ="myPref";
     SharedPreferences pref;
     SharedPreferences.Editor editor;
     Context _context;

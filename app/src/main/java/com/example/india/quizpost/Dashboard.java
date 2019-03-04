@@ -1,5 +1,6 @@
 package com.example.india.quizpost;
 
+import android.content.Intent;
 import android.graphics.PorterDuff;
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
@@ -77,13 +78,15 @@ public class Dashboard extends AppCompatActivity
         // Handle navigation view item clicks here.
         int id = item.getItemId();
 
-        if (id == R.id.nav_camera) {
+        if (id == R.id.nav_Home) {
             // Handle the camera action
-        } else if (id == R.id.nav_gallery) {
+        } else if (id == R.id.nav_Aboutus) {
 
-        } else if (id == R.id.nav_slideshow) {
+        } else if (id == R.id.nav_Result) {
 
-        } else if (id == R.id.nav_manage) {
+        } else if (id == R.id.nav_Rating) {
+            Intent i= new Intent(Dashboard.this,FeedBack.class);
+            startActivity(i);
 
         } else if (id == R.id.nav_share) {
 

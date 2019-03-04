@@ -16,7 +16,6 @@
         android:layout_width="@dimen/_80sdp"
         app:civ_border_width="@dimen/_2sdp"
         app:civ_border_color="#ffffff"
-
         android:layout_height="@dimen/_90sdp"
         android:contentDescription="@string/nav_header_desc"
         android:paddingTop="@dimen/nav_header_vertical_spacing"
